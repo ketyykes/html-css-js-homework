@@ -1,0 +1,44 @@
+/* wrap all area */
+.wrap {
+    width: 960px;
+    margin:0 auto;
+}
+
+
+/* header area  */
+.header{
+    padding: 8px;
+    border:1px solid #000
+}
+
+/* content area */
+.content {
+    border:4px solid rgb(255, 0, 0);
+    padding: 0px 10px 200px 10px;
+}
+.content p{
+    color:blue;
+    margin-top:20px;
+    margin-bottom: 20px;
+}
+
+.content a{
+    width:100px;
+    color:#FFF;
+    display: block;
+    padding:10px;
+    background-color:blue;
+    text-align: center;
+    text-decoration: none;
+    
+}
+.content a:hover{
+    background-color:#000;
+}
+/* Footer area. */
+.footer{
+    padding: 20px 0px;
+    text-align: center;
+    background-color: pink;
+}
+

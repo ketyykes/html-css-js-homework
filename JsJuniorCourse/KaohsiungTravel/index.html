@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no,maximum-scale=1.0" />
+    <title>高雄旅遊資訊</title>
+    <link rel="stylesheet" href="css/all.css" />
+  </head>
+  <body>
+    <div class="header" id="header">
+      <h1>高雄旅遊資訊</h1>
+      <select name="" id="selectDistrict">
+        <option value="請選擇行政區" disabled selected>- - 請選擇行政區 - -</option>
+      </select>
+      <div class="hotDistrict">
+        <h2>熱門行政區</h2>
+        <div class="wrapHotDistrict">
+          <button>苓雅區</button>
+          <button>三民區</button>
+          <button>新興區</button>
+          <button>鹽埕區</button>
+        </div>
+      </div>
+    </div>
+    <div class="content">
+      <div class="container">
+        <a href="#district">
+          <div class="wrapGoData">
+            <div class="iconTriangle"></div>
+          </div>
+        </a>
+        <h3 id="district"></h3>
+
+        <ul class="renderData" >
+          讀取中
+        </ul>
+          <div class="wrapPageNum">
+           
+          </div>
+      </div>
+      <a href="#header" class="goTop"><img src="images/btn_goTop.png" alt="" /></a>
+    </div>
+    <div class="footer">
+      <div class="container">
+        <h2>高雄旅遊網</h2>
+        <p>資料來源：高雄市政府</p>
+      </div>
+    </div>
+    <script src="js/all.js"></script>
+  </body>
+</html>

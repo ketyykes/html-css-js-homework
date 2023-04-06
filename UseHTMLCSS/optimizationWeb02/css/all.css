@@ -1,0 +1,26 @@
+body{
+     cursor: default; 
+}
+a{
+    color: red;
+}
+a:hover{
+    color:blue;
+}
+p{
+    text-indent: 2em;
+}
+h2{
+    border: red solid;
+    border-width: 0px 0px 4px 4px;
+}
+h1{
+    color:blue;
+}
+img{
+    border: black solid 4px;
+    padding: 16px;
+}
+img:hover{
+    border:pink solid 4px;
+}

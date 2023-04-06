@@ -1,0 +1,164 @@
+.content{
+   margin-top: 100px;
+   .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+        h3{
+            color: #8A82CC;
+            font-size: 36px;
+            margin-top: 60px;
+        }
+    }
+}
+.wrapGoData{
+    color: transparent;
+    width: 32px;
+    height: 32px;
+    position: relative;
+    padding: 6px;
+    border:2px solid #559AC8;
+    border-radius: 50%;
+    cursor: pointer;
+    a{
+        display: block;
+    }
+    &:hover{
+        filter:brightness(.8);
+    }
+    &::after,&::before{
+        cursor: default;
+        position: absolute;
+        content: '';
+        display: block;
+        width: 345px;
+        top: 50%;
+        height: 1px;
+        background-size: 15px 1px;
+        background-repeat: repeat-x;
+    }
+    &::before{
+        right: 135%;
+        background-image: linear-gradient(to left, #559AC8 0%, #559AC8 40%, transparent 50%);
+    }
+    &::after{
+        left: 135%;
+        background-image: linear-gradient(to right, #559AC8 0%, #559AC8 40%, transparent 50%);
+    }
+    @include tablet{
+        &::after,&::before{background-image: none;
+        width: 0;
+        }
+    }
+}
+.iconTriangle{
+position: relative;
+top:25%;
+width: 16px;
+height: 16px;;
+border-style: solid;
+border-width: 10px 8px 0 8px;
+border-color: #559AC8 transparent transparent transparent;
+}
+.renderData{
+    margin-top: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    li{
+        position: relative;
+        box-shadow:1px 1px 10px 2px rgba(0, 0, 0, 0.479);
+        width: calc(50% + -16px);
+        margin: 18px 8px;
+        @include tablet{
+            width: calc(100% + -16px);
+        }
+    }
+  
+    p{
+        padding: 8px 20px;
+        img{
+            vertical-align:bottom;
+            padding: 0 8px;
+        }
+    }
+    .wrapPhoneVisit{
+        display: flex;
+        justify-content: space-between;
+    }
+    .viewVisit{
+        display: block;
+    }
+    .viewVisitMore{
+        display: none;
+        box-shadow:1px 1px 10px 2px rgba(0, 0, 0, 0.479);
+        position: absolute;
+        background-color: #fff;
+        width: 50%;
+        right: -25%;
+        top: 75%;
+        z-index: 100;
+        padding-top: 35px;
+        border-radius: 4px;
+    }
+    .viewPhone{
+        display: block;
+        white-space:nowrap;
+    }
+    a{
+        color: #000;
+        text-decoration: none;
+    &:hover{
+        color: #AAA;
+    }
+    }
+    .wrapLocation{
+        background-position: center;
+        background-size: cover;
+        height: 337.5px;
+        color: #fff;
+        position: relative;
+        h4,h5{
+            padding: 10px 20px;
+            position: absolute;
+            bottom:0px;
+        }
+        h4{
+            left: 0;
+            font-size:24px;
+        }
+        h5{
+            right: 0;
+            font-size: 16px;
+        }
+    }
+}
+.wrapPageNum{
+    button{
+        padding: 12px;
+        font-size: 14px;
+        outline: none;
+        border:none;
+        background-color: transparent;
+        &:hover{
+            color:#559AC8;
+            cursor: pointer;
+        }
+        &:active{
+            color:#3c6c8d;
+        }
+    }
+}
+.goTop{
+    display: block;
+    width: 24px;
+    height: 24px;
+    position: fixed;
+    right: 40px;
+    bottom: 100px;
+}
+html{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}

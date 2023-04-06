@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.css" />
+    <title>BMI計算</title>
+  </head>
+  <body>
+    <div class="header pt-6 pb-6">
+      <div class="container df jcc aic">
+        <img src="images/BMICLogo.png" alt="LOGO" />
+        <div class="wrap_inputHW ml-6 mr-6">
+            <label for="enter_height">身高 cm</label>
+            <input class="mb-3" id="enter_height" type="number" placeholder="請輸入身高"/>
+            <label for="enter_weight">體重 kg</label>
+            <input class="mb-3" id="enter_weight"type="number" placeholder="請輸入體重" />
+            <div class="promptText vh">體重或身高格式錯誤</div>
+        </div>
+        <div class="result">
+            看結果
+        </div>
+        <div class="wrap_reset dn">
+            <div class="reset df fxdc jcc aic">
+            <p></p>
+            <p>BMI</p>
+            <div>
+              <img src="images/icons_loop.png" />
+            </div>
+            </div>
+            <p>理想</p>
+        </div>
+      </div>
+    </div>
+    <div class="content">
+      <div class="container pt-4 pb-4">
+        <h2 class="mb-3">BMI紀錄</h2>
+        <button id="allDel" class="dn">全部刪除</button>
+        <div class="list">
+           <ul class="pl-1 pr-1">
+          <li>理想</li>
+          <li><span>BMI</span> 20.90</li>
+          <li><span>weight</span> 70kg</li>
+          <li><span>height</span> 180cm</li>    <li><span>06-19-2020<span></li>
+          <button>刪除</button>
+        </ul>
+        </div>
+       
+      </div>
+    </div>
+    <div class="footer">
+      <div class="container">
+        <img src="images/BMICLogo.png" alt="">
+      </div>
+    </div>
+    <script src="js/all.js"></script>
+  </body>
+</html>

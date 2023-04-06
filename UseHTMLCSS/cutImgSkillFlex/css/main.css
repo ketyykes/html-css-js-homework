@@ -1,0 +1,242 @@
+body{
+    font-family:PingFangSC-Regular,'Microsoft JhengHei', sans-serif; 
+}
+.lightGreenColor{
+    color:#42d3a9;
+}
+h3{
+    font-size: 22px;
+    font-weight: 700;
+}
+.m0Auto960{
+    margin: 0 auto;
+    width: 960px;
+}
+.mb60{
+    margin-bottom: 60px;
+}
+.mt60{
+    margin-top: 60px;
+}
+.mt30{
+    margin-top: 30px;
+}
+.mb30{
+    margin-bottom: 30px;
+}
+.pt8{
+    padding-top: 8px;
+}
+.pb8{
+    padding-bottom: 8px;
+}
+.pl8{
+    padding-left: 8px;
+}
+.pr8{
+    padding-right: 8px;
+}
+.pt32{
+    padding-top: 32px;
+}
+.pb32{
+    padding-bottom:32px;
+}
+.p8{
+    padding: 8px;
+}
+.df{
+    display: flex;
+}
+.jcsb{  
+    justify-content: space-between;
+}
+.jcfe{
+    justify-content: flex-end;
+}
+.aic{
+    align-items:center;
+}
+.fxdc{
+    flex-direction: column;
+}
+.jcc{
+    justify-content: center;
+}
+.iconFollow{
+    background-color: #f6f6f6;
+}
+.iconFollow img{
+    vertical-align: bottom;
+}
+.iconFollow li:last-child{
+    border-left: 1px solid #cccccc;
+}
+.iconFollow li:first-child>a{
+    color:#4460a0;
+}
+.iconFollow li:last-child>a{
+    color:#00aaec;
+}
+.iconFollow li:first-child>a:hover{
+    transition:color 1s ;
+    color:orange;
+}
+.iconFollow li:last-child>a:hover{
+    transition:color 1s ;
+    color:orange;
+}
+.header h1>a {
+    background-image: url(../images/logo.png);
+    display: block;
+    width: 174px;
+    height: 36px;
+    background-repeat: no-repeat;
+    text-indent: 101%;
+    overflow: hidden;
+}
+.header ul li a{
+    display: block;
+    color: #00cc99;
+    line-height:36px;
+}
+.header ul li{
+    padding: 8px;
+}
+.header ul li a:after {
+    content: "";
+    display: block;
+    width: 0%;height:2px;
+    background-color:#42d3a9;
+}
+.header ul li a:hover:after{
+    transition:width .5s;
+    width: 100%
+}
+.banner{
+    height: 346px;
+    background-image: url(../images/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.blackBanner{
+    width: 100%;
+    background-color:rgba(0,0,0,0.5);
+}
+.blackBanner h2{
+    margin-left:1em;
+}
+.banner h2{
+    color:#FFF;
+    font-size: 32px;
+}
+.htmlJqRwdBox{
+    text-align: center;
+    width: 300px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+}
+.wrapImg{
+    height: 140px;
+}
+.htmlJqRwdBox p{
+    text-align: justify;
+    letter-spacing:2px;
+}
+.htmlJqRwdBox ol{
+    text-align: left;
+    list-style: inside;
+}
+.htmlJqRwdBox h4{
+    text-align: left;
+}
+.whatIsDifferent h3{
+    text-align: center;
+}
+.whatIsDifferent table tr:first-child{
+    background-color:#f7f7f7;
+    font-weight: 700;
+}
+.whatIsDifferent td,.whatIsDifferent th{
+    border-top: 1px solid #dddddd;
+    border-bottom: 1px solid #dddddd;
+    padding-bottom: 8px;
+    padding-top: 8px;
+}
+.whatIsDifferent table{
+    width: 90%;
+    text-align: left;
+}
+.whatIsDifferent tr:hover{
+    background-color: #dddddd;
+}
+.whatIsDifferent table tr th:first-child{
+    text-indent: 1rem;
+}
+.interestingClass{
+    background-image: url(../images/bgc.png);
+    background-color: #009872;
+    background-repeat: repeat-x;
+}
+.interestingClass h3{
+    color:#FFF;
+    text-align: center;
+    line-height: 1.5em;
+}
+.interestingClass textarea{
+    width: 450px;
+    border-radius: 4px;
+    resize: none;
+}
+.personalData{
+    width: 450px;
+    justify-content: space-between;
+}
+.personalData label{
+    line-height: 2rem;
+    color:#FFF;
+    font-size: 16px;
+}
+.personalData input:not([type="submit"]){
+    font-size: 22px;
+    padding: 8px;
+}
+.personalData input{
+    outline-style: none;
+    border: 0px;
+    border-radius: 4px;
+}
+
+.personalData input:focus{
+    background-color:#d6d6d6;
+}
+.personalData input[type="submit"]{
+    font-size: 16px;
+    color:#FFF;
+    padding-left: 22px;
+    padding-right: 22px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    background-color: #00cc99;
+    align-self: flex-end;
+}
+.personalData input[type="submit"]:hover{
+    cursor:pointer;
+    background-color:#045642;
+}
+.personalData input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+-webkit-appearance: none;
+}
+.personalData input[type="number"]{
+    -moz-appearance: textfield;
+}
+.footer{
+    padding-left:16px;
+    padding-right: 16px;
+}
+.wrapConnect a{
+    color:#e12d80;
+}
+.wrapConnect a:hover{
+    color:darkblue;
+}

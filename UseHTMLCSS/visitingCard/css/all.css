@@ -1,0 +1,275 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* css reset end */
+* {
+  font-family: arial, 微軟正黑體;
+  letter-spacing: 3px;
+}
+
+body {
+  background-color: #00f5a8;
+}
+
+.sideHex {
+  color: #004e40;
+  float: left;
+  font-size: 40px;
+  writing-mode: vertical-rl;
+  white-space: nowrap;
+  letter-spacing: 10px;
+  margin-right: 10px;
+  text-shadow: 2px 2px 6px white;
+}
+.sideTitle {
+  color: #004e40;
+  float: left;
+  font-size: 30px;
+  writing-mode: vertical-rl;
+  white-space: nowrap;
+  margin-right: 20px;
+  letter-spacing: 20px;
+}
+.wrap {
+  width: 960px;
+  margin: 0 auto;
+  margin-top: 200px;
+}
+.card {
+  float: left;
+  overflow: hidden;
+  position: relative;
+  width: 500px;
+ 
+}
+.card-style {
+  border-radius: 20px;
+  border: 1px solid black;
+  padding: 30px;
+  background-color: #fff;
+  -webkit-filter: drop-shadow(12px 12px 7px 7px rgba(0, 0, 0, 0.7));
+  filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.7));
+}
+.card:hover{
+		transform:rotateY(360deg);
+		transition:2s;
+		transition-timing-function:cubic-bezier(.66,.18,.22,.77);
+}
+.card h3 {
+  font-size: 20px;
+  margin-top: 20px;
+  color: #3b7882;
+}
+.card h1 {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-size: 32px;
+  text-indent: 5em;
+  color: #005e4b;
+}
+.card li {
+  font-size: 18px;
+  color: #3b7882;
+  margin: 10px;
+}
+.card li a{
+  text-decoration: none;
+  color: #3b7882;
+}
+
+.card li a:hover{
+  text-decoration: none;
+  color: #ff0000;
+}
+.hexagon {
+  position: absolute;
+  width: 100px;
+  height: 0;
+  border-width: 0 50px 87px;
+  border-style: solid;
+  border-color: transparent transparent #00c178;
+  right: -70px;
+  top: -60px;
+}
+.hexagon:before {
+  position: absolute;
+  content: "";
+  top: 87px;
+  left: -50px;
+  width: 100px;
+  height: 0;
+  background: none;
+  border-width: 87px 50px 0;
+  border-style: solid;
+  border-color: #00c178 transparent transparent;
+}
+
+.hexagon1 {
+  position: absolute;
+  width: 80px;
+  height: 0;
+  border-width: 0 40px 70px;
+  border-style: solid;
+  border-color: transparent transparent #6bd3a7;
+  right: -37px;
+  top: 124px;
+}
+
+.hexagon1:before {
+  position: absolute;
+  content: "";
+  top: 70px;
+  left: -40px;
+  width: 80px;
+  height: 0;
+  background: none;
+  border-width: 70px 40px 0;
+  border-style: solid;
+  border-color: #6bd3a7 transparent transparent;
+}
+
+
+.hexagon2 {
+	position: absolute;
+	width: 40px;
+	height: 0;
+	border-width: 0 20px 36px;
+	border-style: solid;
+	border-color: transparent transparent #659d92;
+	right: 88px;
+	top: 81px;
+  }
+  
+  .hexagon2:before {
+	position: absolute;
+	content: "";
+	top: 36px;
+	left: -20px;
+	width: 40px;
+	height: 0;
+	background: none;
+	border-width: 36px 20px 0;
+	border-style: solid;
+	border-color: #659d92 transparent transparent;
+  }

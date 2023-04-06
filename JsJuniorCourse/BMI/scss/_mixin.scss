@@ -1,0 +1,52 @@
+@mixin container($mxw){
+    margin: 0 auto;
+    max-width: $mxw;
+}
+@mixin baseDistance($attrNickname,$attr,$size,$loopTime){
+  @for $i from 1 through $loopTime {
+    .#{$attrNickname+'-'+$i}{
+      #{$attr}:$size*$i;
+    }
+  }
+}
+
+@mixin flex{
+  .df{
+    display: flex;
+  }
+  .jcc{
+    justify-content: center;
+  }
+  .aic{
+    align-items: center;
+  }
+  .jcsb{
+    justify-content: space-between;
+  }
+  .fxdc{
+    flex-direction: column;
+  }
+}
+
+@mixin disabled_input_arrow{
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  }
+  input[type="number"]{
+  -moz-appearance: textfield;
+  }
+}
+@mixin display{
+  .db{
+    display: block;
+  }
+  .dn{
+    display: none;
+  }
+}
+@mixin visibility{
+  .vh{
+    visibility: hidden;
+  }
+}

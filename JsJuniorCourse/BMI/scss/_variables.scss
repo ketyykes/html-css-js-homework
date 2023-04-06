@@ -1,0 +1,28 @@
+// BMI various color 
+$BMI_color_name:"_lightgreen","_lightblue","_orange1","_orange2","_red";
+$BMI_color_value:#86D73F,#31BAF9,#FF982D,#FF6C02,#FF1200;
+
+@for $i from 1 through 5{
+    .background_color#{nth($BMI_color_name,$i)}{
+        background:nth($BMI_color_value,$i);
+    }
+    .font_color#{nth($BMI_color_name,$i)}{
+        color:nth($BMI_color_value,$i);
+    }
+    .border_color#{nth($BMI_color_name,$i)}{
+        border-color:nth($BMI_color_value,$i);
+    }
+    .border_left_color#{nth($BMI_color_name,$i)}{
+        border-left-color:nth($BMI_color_value,$i);
+    }
+}
+//font size
+$font_size_base:12px;
+$font_size_1d5:ceil(1.5*$font_size_base);
+$font_size_1d7:ceil(1.7*$font_size_base);
+$font_size_2d:ceil(2*$font_size_base);
+
+//main colr
+$main_color:#FFD366;
+$headerBGC:#424242;
+$contentBGC:#f5f5f5;

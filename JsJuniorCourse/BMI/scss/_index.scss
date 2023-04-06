@@ -1,0 +1,37 @@
+@include display;
+.content{
+    background-color:$contentBGC;
+    h2{
+        color: #424242;
+        font-size: $font_size_1d7;
+        text-align: center;
+
+    }
+    .list{
+        @include BMIrecord(){
+            // border-left: 7px solid $BMI_color_lightgreen;
+        };
+    }
+    .container{
+        text-align: center;
+        button{
+            cursor: pointer;
+            background-color: red;
+            outline: none;
+            color:white;
+            border: none;
+            border-radius:4px;
+            padding: 8px;
+            &:hover{
+                background-color: rgb(248, 123, 123);
+                }
+            &:active{
+                    background-color: rgb(255, 195, 195);
+                }
+        }
+    
+    }
+
+    
+}
+
